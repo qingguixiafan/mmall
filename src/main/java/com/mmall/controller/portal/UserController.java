@@ -138,6 +138,7 @@ public class UserController {
 
     @RequestMapping(value = "test.do",method = RequestMethod.POST)
     @ResponseBody
+    // this just is test code
     public ServerResponse<User> Test(HttpSession session, @RequestBody User user){
         return ServerResponse.createBySuccess(user);
     }
